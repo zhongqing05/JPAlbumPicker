@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B664B9221C8F8130012C93E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664B9121C8F8130012C93E /* AppDelegate.m */; };
+		6B664B9521C8F8130012C93E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664B9421C8F8130012C93E /* ViewController.m */; };
+		6B664B9821C8F8130012C93E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B664B9621C8F8130012C93E /* Main.storyboard */; };
+		6B664B9D21C8F8150012C93E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B664B9C21C8F8150012C93E /* Assets.xcassets */; };
+		6B664BA021C8F8150012C93E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B664B9E21C8F8150012C93E /* LaunchScreen.storyboard */; };
+		6B664BA321C8F8150012C93E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BA221C8F8150012C93E /* main.m */; };
+		6B664BF821CCECE10012C93E /* JPAlbumListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BDC21CCECE10012C93E /* JPAlbumListView.m */; };
+		6B664BF921CCECE10012C93E /* JPAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BDD21CCECE10012C93E /* JPAlbumViewController.m */; };
+		6B664BFA21CCECE10012C93E /* UIImage+WLUtiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BE021CCECE10012C93E /* UIImage+WLUtiles.m */; };
+		6B664BFC21CCECE10012C93E /* NSIndexSet+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BE321CCECE10012C93E /* NSIndexSet+Utils.m */; };
+		6B664BFE21CCECE10012C93E /* JPImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BE821CCECE10012C93E /* JPImagePickerViewController.m */; };
+		6B664BFF21CCECE10012C93E /* JPCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BE921CCECE10012C93E /* JPCameraView.m */; };
+		6B664C0021CCECE10012C93E /* JPPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BED21CCECE10012C93E /* JPPhotoManager.m */; };
+		6B664C0121CCECE10012C93E /* JPAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BF121CCECE10012C93E /* JPAssetModel.m */; };
+		6B664C0221CCECE10012C93E /* JPAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BF221CCECE10012C93E /* JPAlbumModel.m */; };
+		6B664C0421CCECE10012C93E /* JPAlbumCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B664BF721CCECE10012C93E /* JPAlbumCollectionCell.m */; };
+		6BB8CDD2225B24180012211C /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB8CDD1225B24180012211C /* Photos.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B664B8D21C8F8130012C93E /* JPAlbumPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPAlbumPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B664B9021C8F8130012C93E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B664B9121C8F8130012C93E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B664B9321C8F8130012C93E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B664B9421C8F8130012C93E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B664B9721C8F8130012C93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B664B9C21C8F8150012C93E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B664B9F21C8F8150012C93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B664BA121C8F8150012C93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B664BA221C8F8150012C93E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B664BDC21CCECE10012C93E /* JPAlbumListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAlbumListView.m; sourceTree = "<group>"; };
+		6B664BDD21CCECE10012C93E /* JPAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAlbumViewController.m; sourceTree = "<group>"; };
+		6B664BDF21CCECE10012C93E /* NSIndexSet+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+Utils.h"; sourceTree = "<group>"; };
+		6B664BE021CCECE10012C93E /* UIImage+WLUtiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WLUtiles.m"; sourceTree = "<group>"; };
+		6B664BE321CCECE10012C93E /* NSIndexSet+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+Utils.m"; sourceTree = "<group>"; };
+		6B664BE521CCECE10012C93E /* UIImage+WLUtiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WLUtiles.h"; sourceTree = "<group>"; };
+		6B664BE721CCECE10012C93E /* JPPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPPhotoManager.h; sourceTree = "<group>"; };
+		6B664BE821CCECE10012C93E /* JPImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImagePickerViewController.m; sourceTree = "<group>"; };
+		6B664BE921CCECE10012C93E /* JPCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCameraView.m; sourceTree = "<group>"; };
+		6B664BEA21CCECE10012C93E /* JPAlbumCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAlbumCollectionCell.h; sourceTree = "<group>"; };
+		6B664BEB21CCECE10012C93E /* JPAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAlbumViewController.h; sourceTree = "<group>"; };
+		6B664BEC21CCECE10012C93E /* JPAlbumListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAlbumListView.h; sourceTree = "<group>"; };
+		6B664BED21CCECE10012C93E /* JPPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPhotoManager.m; sourceTree = "<group>"; };
+		6B664BEF21CCECE10012C93E /* JPAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAlbumModel.h; sourceTree = "<group>"; };
+		6B664BF121CCECE10012C93E /* JPAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAssetModel.m; sourceTree = "<group>"; };
+		6B664BF221CCECE10012C93E /* JPAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAlbumModel.m; sourceTree = "<group>"; };
+		6B664BF421CCECE10012C93E /* JPAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAssetModel.h; sourceTree = "<group>"; };
+		6B664BF521CCECE10012C93E /* JPCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCameraView.h; sourceTree = "<group>"; };
+		6B664BF621CCECE10012C93E /* JPImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImagePickerViewController.h; sourceTree = "<group>"; };
+		6B664BF721CCECE10012C93E /* JPAlbumCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAlbumCollectionCell.m; sourceTree = "<group>"; };
+		6BB8CDD1225B24180012211C /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		6BD6E449225B590C005A20E3 /* MacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B664B8A21C8F8130012C93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB8CDD2225B24180012211C /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C53B83C32977B8B8A58535E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BB8CDD1225B24180012211C /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B664B8421C8F8130012C93E = {
+			isa = PBXGroup;
+			children = (
+				6B664B8F21C8F8130012C93E /* JPAlbumPicker */,
+				6B664B8E21C8F8130012C93E /* Products */,
+				0C53B83C32977B8B8A58535E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B664B8E21C8F8130012C93E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B664B8D21C8F8130012C93E /* JPAlbumPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B664B8F21C8F8130012C93E /* JPAlbumPicker */ = {
+			isa = PBXGroup;
+			children = (
+				6B664BDB21CCECE10012C93E /* Album */,
+				6B664B9021C8F8130012C93E /* AppDelegate.h */,
+				6B664B9121C8F8130012C93E /* AppDelegate.m */,
+				6B664B9321C8F8130012C93E /* ViewController.h */,
+				6B664B9421C8F8130012C93E /* ViewController.m */,
+				6B664B9621C8F8130012C93E /* Main.storyboard */,
+				6B664B9C21C8F8150012C93E /* Assets.xcassets */,
+				6B664B9E21C8F8150012C93E /* LaunchScreen.storyboard */,
+				6B664BA121C8F8150012C93E /* Info.plist */,
+				6B664BA221C8F8150012C93E /* main.m */,
+			);
+			path = JPAlbumPicker;
+			sourceTree = "<group>";
+		};
+		6B664BDB21CCECE10012C93E /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				6B664BDE21CCECE10012C93E /* Category */,
+				6B664BEE21CCECE10012C93E /* Model */,
+				6B664BEA21CCECE10012C93E /* JPAlbumCollectionCell.h */,
+				6B664BF721CCECE10012C93E /* JPAlbumCollectionCell.m */,
+				6B664BEC21CCECE10012C93E /* JPAlbumListView.h */,
+				6B664BDC21CCECE10012C93E /* JPAlbumListView.m */,
+				6B664BEB21CCECE10012C93E /* JPAlbumViewController.h */,
+				6B664BDD21CCECE10012C93E /* JPAlbumViewController.m */,
+				6B664BF521CCECE10012C93E /* JPCameraView.h */,
+				6B664BE921CCECE10012C93E /* JPCameraView.m */,
+				6B664BF621CCECE10012C93E /* JPImagePickerViewController.h */,
+				6B664BE821CCECE10012C93E /* JPImagePickerViewController.m */,
+				6B664BE721CCECE10012C93E /* JPPhotoManager.h */,
+				6B664BED21CCECE10012C93E /* JPPhotoManager.m */,
+				6BD6E449225B590C005A20E3 /* MacroDefine.h */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		6B664BDE21CCECE10012C93E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6B664BDF21CCECE10012C93E /* NSIndexSet+Utils.h */,
+				6B664BE321CCECE10012C93E /* NSIndexSet+Utils.m */,
+				6B664BE521CCECE10012C93E /* UIImage+WLUtiles.h */,
+				6B664BE021CCECE10012C93E /* UIImage+WLUtiles.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6B664BEE21CCECE10012C93E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B664BEF21CCECE10012C93E /* JPAlbumModel.h */,
+				6B664BF221CCECE10012C93E /* JPAlbumModel.m */,
+				6B664BF421CCECE10012C93E /* JPAssetModel.h */,
+				6B664BF121CCECE10012C93E /* JPAssetModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B664B8C21C8F8130012C93E /* JPAlbumPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B664BA621C8F8150012C93E /* Build configuration list for PBXNativeTarget "JPAlbumPicker" */;
+			buildPhases = (
+				6B664B8921C8F8130012C93E /* Sources */,
+				6B664B8A21C8F8130012C93E /* Frameworks */,
+				6B664B8B21C8F8130012C93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPAlbumPicker;
+			productName = JPAlbumPicker;
+			productReference = 6B664B8D21C8F8130012C93E /* JPAlbumPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B664B8521C8F8130012C93E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = zhongqing;
+				TargetAttributes = {
+					6B664B8C21C8F8130012C93E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6B664B8821C8F8130012C93E /* Build configuration list for PBXProject "JPAlbumPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B664B8421C8F8130012C93E;
+			productRefGroup = 6B664B8E21C8F8130012C93E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B664B8C21C8F8130012C93E /* JPAlbumPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B664B8B21C8F8130012C93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B664BA021C8F8150012C93E /* LaunchScreen.storyboard in Resources */,
+				6B664B9D21C8F8150012C93E /* Assets.xcassets in Resources */,
+				6B664B9821C8F8130012C93E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B664B8921C8F8130012C93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B664BFE21CCECE10012C93E /* JPImagePickerViewController.m in Sources */,
+				6B664BFA21CCECE10012C93E /* UIImage+WLUtiles.m in Sources */,
+				6B664BF821CCECE10012C93E /* JPAlbumListView.m in Sources */,
+				6B664C0121CCECE10012C93E /* JPAssetModel.m in Sources */,
+				6B664BFC21CCECE10012C93E /* NSIndexSet+Utils.m in Sources */,
+				6B664BFF21CCECE10012C93E /* JPCameraView.m in Sources */,
+				6B664C0021CCECE10012C93E /* JPPhotoManager.m in Sources */,
+				6B664BF921CCECE10012C93E /* JPAlbumViewController.m in Sources */,
+				6B664C0421CCECE10012C93E /* JPAlbumCollectionCell.m in Sources */,
+				6B664B9521C8F8130012C93E /* ViewController.m in Sources */,
+				6B664C0221CCECE10012C93E /* JPAlbumModel.m in Sources */,
+				6B664BA321C8F8150012C93E /* main.m in Sources */,
+				6B664B9221C8F8130012C93E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B664B9621C8F8130012C93E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B664B9721C8F8130012C93E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B664B9E21C8F8150012C93E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B664B9F21C8F8150012C93E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B664BA421C8F8150012C93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B664BA521C8F8150012C93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B664BA721C8F8150012C93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = T2C8PFN9DD;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = JPAlbumPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.huoxing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_miaobo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B664BA821C8F8150012C93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = JPAlbumPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.huoxing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B664B8821C8F8130012C93E /* Build configuration list for PBXProject "JPAlbumPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B664BA421C8F8150012C93E /* Debug */,
+				6B664BA521C8F8150012C93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B664BA621C8F8150012C93E /* Build configuration list for PBXNativeTarget "JPAlbumPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B664BA721C8F8150012C93E /* Debug */,
+				6B664BA821C8F8150012C93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B664B8521C8F8130012C93E /* Project object */;
+}
