@@ -268,12 +268,13 @@
 {
     PHFetchResultChangeDetails *collectionChanges = [changeInstance changeDetailsForFetchResult:_albumModel.content];
     if (!collectionChanges) return;
+    __weak typeof(self) weakself = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        _albumModel.content = [collectionChanges fetchResultAfterChanges];
+        __strong typeof(weakself) strongSelf = weakself;
+        strongSelf->_albumModel.content = [collectionChanges fetchResultAfterChanges];
         UICollectionView *collectionView = self.collectionView;
-  
         if ([collectionChanges hasIncrementalChanges]) {
-            BOOL isCamera = _isShowCamera;
+            BOOL isCamera = strongSelf->_isShowCamera;
             
             NSArray <NSIndexPath *>*removedPaths = nil;
             NSArray <NSIndexPath *>*insertedPaths = nil;
@@ -302,8 +303,8 @@
                 }
             }
             
-            NSInteger item = _isShowCamera ? removedPaths.lastObject.item - 1 : removedPaths.lastObject.item;
-            if (removedPaths.lastObject && item >= _albumModel.count) shouldReload = YES;
+            NSInteger item = strongSelf.isShowCamera ? removedPaths.lastObject.item - 1 : removedPaths.lastObject.item;
+            if (removedPaths.lastObject && item >= strongSelf->_albumModel.count) shouldReload = YES;
             
             if (shouldReload) {
                 [collectionView reloadData];
